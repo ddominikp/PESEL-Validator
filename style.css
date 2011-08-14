@@ -1,0 +1,38 @@
+html{
+	text-align: left;
+}
+a{
+	text-decoration: none;
+}
+img{
+	border: 0;
+}
+div.validators{
+	text-align: center;
+	margin: 0 auto;
+	padding: 5px;
+}
+div.error{
+	text-align: center;
+	color: red;
+}
+div.correct{
+	text-align: center;
+	color: green;
+}
+div.info{
+	margin: 0 auto;
+	text-align: left;
+	padding: 5px;
+}
+div.form{
+	padding: 5px;
+	text-align: left;
+}
+div.main{
+	border: 1px solid black;
+	width: 50%;
+	height: 50%;
+	margin: 0 auto;
+	padding: 5px;
+}
