@@ -10,16 +10,16 @@ class pesel{
 			if(strlen($pesel)==11){
 				$this->pesel = $pesel;
 				return true;
-			} else throw new Exception("Podany PESEL ma niewłaściwą długość!");
-		} else throw new Exception("Podany PESEL nie jest liczbą!");
+			} else throw new Exception("The length of given PESEL number is wrong!");
+		} else throw new Exception("PESEL is not numeric!");
 	}
 	function getPesel(){
 		if($this->pesel) return $this->pesel;
 		else return false;
 	}
 	function getSex(){
-		if($this->sex == "M") return "Mężczyzna";
-		if($this->sex == "F") return "Kobieta";
+		if($this->sex == "M") return "Male";
+		if($this->sex == "F") return "Female";
 	}
 	function getBirthDate(){
 		return $this->birthdate;
@@ -28,7 +28,7 @@ class pesel{
 		return $this->lp;
 	}
 	function isValid(){
-		if(empty($this->pesel)) throw new Exception("Brak numeru PESEL!");
+		if(empty($this->pesel)) throw new Exception("You have to set PESEL number first");
 		$pesel = $this->pesel;
  		$w = array(1,3,7,9);
  		for($i=0;$i<=9;$i++)
